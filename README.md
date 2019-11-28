@@ -46,22 +46,22 @@
 </ul>
 
 
-<h3 id="start">:construction_worker: Set up </h3>
+<h3 id="start">:construction_worker: Prepare the app </h3>
 <p>Download the heroku getting started repository by typing the command below : </p>
-<code>git clone https://github.com/heroku/python-getting-started.git </code><br>
+<code>git clone https://github.com/heroku/python-getting-started.git </code><br><br>
 <p>Then move into the directory you just downloaded : </p>
-<code>cd python-getting-started</code><br>
+<code>cd python-getting-started</code><br><br>
 
 <p>Feel free to explore the content of the directory, it may be helpful </p>
 
 <h3 id="deploy">:rocket: Deploy your application on heroku. </h3>
 <code> heroku create </code><br><br>
-<code> git push heroku master && heroku open </code><br>
+<code> git push heroku master && heroku open </code><br><br>
 
 
 <h3 id="logs">:lock_with_ink_pen: View logs</h3>
 
-<code>heroku logs --tail</code><br>
+<code>heroku logs --tail</code><br><br>
 <p><em><b>Then type ctrl + c if you want to quit the logs views.</b></em></p>
 
 
@@ -73,7 +73,7 @@
 
 <p>checkout the status of dyno by the command below : </p>
 
-<code> heroku ps </code><br>
+<code> heroku ps </code><br><br>
 
 
 
