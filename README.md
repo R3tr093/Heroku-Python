@@ -32,12 +32,10 @@
 
 <ul>
 
-<li><a href="">Set up</a></li>
-<li><a href="">Prepare the app</a></li>
-<li><a href="">Deploy the app</a></li>
-<li><a href="">View logs</a></li>
-<li><a href="">Define a Procfile</a></li>
-<li><a href="">Scale the app</a></li>
+<li><a href="#start">Prepare the app</a></li>
+<li><a href="#deploy">Deploy the app</a></li>
+<li><a href="#logs">View logs</a></li>
+<li><a href="#scale">Scale the app</a></li>
 <li><a href="">Declare app dependencies</a></li>
 <li><a href="">Run the App locally</a></li>
 <li><a href="">Push local changes</a></li>
@@ -45,12 +43,47 @@
 <li><a href="">Start a console</a></li>
 <li><a href="">Define config vars</a></li>
 <li><a href="">Provisions a postgre Database</a></li>
-
-
-
-
-
 </ul>
+
+
+<h3 id="start">:construction_worker: Set up </h3>
+<p>Download the heroku getting started repository by typing the command below : </p>
+<code>git clone https://github.com/heroku/python-getting-started.git </code><br>
+<p>Then move into the directory you just downloaded : </p>
+<code>cd python-getting-started</code><br>
+
+<p>Feel free to explore the content of the directory, it may be helpful </p>
+
+<h3 id="deploy">:rocket: Deploy your application on heroku. </h3>
+<code> heroku create </code><br>
+<code> git push heroku master && heroku open </code><br>
+
+
+<h3 id="logs">:lock_with_ink_pen: View logs</h3>
+
+<code>heroku logs --tail</code><br>
+<p><em><b>Then type ctrl + c if you want to quit the logs views.</b></em></p>
+
+
+<h3 id="scale"> Scale the app </h3>
+
+<p>Your app is running into a <b>dyno</b>, you can see dyno like a lightweight container, Free dynos will sleep after a half hour of inactivity (if they don’t receive any traffic). This causes a delay of a few seconds for the first request upon waking. </p>
+
+<p>Also all of yours free dyno consume from a monthly quota of free dyno hours - as long as the quota is not exhausted, all free apps can continue to run.</p>
+
+<p>checkout the status of dyno by the command below : </p>
+
+<code> heroku ps </code><br>
+
+
+
+
+
+
+
+
+
+
 
 
 
