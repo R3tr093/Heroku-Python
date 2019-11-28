@@ -39,10 +39,10 @@
 <li><a href="#dependencies">Declare app dependencies</a></li>
 <li><a href="local">Run the App locally</a></li>
 <li><a href="push">Push local changes</a></li>
-<li><a href="">Provision add-ons</a></li>
-<li><a href="">Start a console</a></li>
-<li><a href="">Define config vars</a></li>
-<li><a href="">Provisions a postgre Database</a></li>
+<li><a href="addon">Provision add-ons</a></li>
+<li><a href="cons">Start a console</a></li>
+<li><a href="conf">Define config vars</a></li>
+<li><a href="db">Provisions a postgre Database</a></li>
 </ul>
 
 <hr>
@@ -104,7 +104,9 @@
 
 <p>:warning: Note: if you’re running Linux, the <a href="https://zoomadmin.com/HowToInstall/UbuntuPackage/libpq-dev">libpq-dev system package</a> (or equivalent for your distribution) must also be installed.</p>
 
+<hr>
 <h3 id="local">:tada: Run the app locally</h3>
+<hr>
 
 <p>Django uses local assets, so first, you’ll need to run collectstatic:</p>
 
@@ -127,10 +129,7 @@
 
 <p>Install request locally : </p>
 
-
-<hr>
-<code>pip install requests</code>
-<hr>
+<code>pip install requests</code><br><br>
 
 <p>Now, Modify the gettingstarted/hello/views.py rewrite the function index : </p>
 
@@ -159,3 +158,71 @@ import requests
 <code>git commit -m "Demo"</code><br><br>
 <code>git push heroku master</code><br><br>
 <code>heroku open</code><br><br>
+
+
+<hr>
+<h3 id="addon">  :moneybag: Provision add-ons (it's free) </h3>
+<hr>
+
+<p>Provision the papertrail logging add-on: </p>
+
+<code>heroku addons:create papertrail</code><br><br>
+
+<p>Check addons report : </p>
+
+<code>heroku addons:open papertrail </code><br><br>
+
+<p><b>OR</b></p>
+
+<code>heroku addons:open database</code><br><br>
+
+<hr>
+<h3 id="cons">  :computer: Start a console  </h3>
+<hr>
+
+<code>heroku run python manage.py shell</code><br><br>
+
+<p><b>type ' exit ' to close the console.</b></p>
+
+<hr>
+<h3 id="conf">:cd: Define config vars</h3>
+<hr>
+
+<p>Edit <b>hello/views.py </b> At the beginning, add a line to import the os module:</p>
+
+```python
+import os
+```
+
+<p>Now modify the <b> index </b> method : </p>
+
+```python
+def index(request):
+    times = int(os.environ.get('TIMES',3))
+    return HttpResponse('Hello! ' * times)
+```
+
+<p>Take a look on your config by the command : </p>
+
+<code>heroku config</code><br><br>
+
+<p>You can see the changes in local with <b><i>heroku local</i></b></p>
+
+
+<hr>
+<h3 id="db"> :book: Run the database </h3>
+<hr>
+
+<p> Run the standard Django manage.py migrate to create the tables.</p>
+<code>heroku run python manage.py migrate</code><br><br>
+
+<p>Assuming that you have Postgres installed locally, use the heroku pg:psql command to connect to the remote database and see all the rows:</p>
+<code>heroku pg:psql</code><br><br>
+
+<p><a href="https://www.postgresql.org/docs/12/index.html" target="_blank">Postgresql official documentation</a></p>
+
+<hr>
+<h3 href="end"> :end: In conclusion</h3>
+<hr>
+
+<p>You have an environment to practice with Django to create web applications. This readme is only a condensed version so I can remember how to deploy this environment, you will find more information on other sources if you need it.</p>
