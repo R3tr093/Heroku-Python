@@ -37,12 +37,12 @@
 <li><a href="#logs">View logs</a></li>
 <li><a href="#scale">Scale the app</a></li>
 <li><a href="#dependencies">Declare app dependencies</a></li>
-<li><a href="local">Run the App locally</a></li>
-<li><a href="push">Push local changes</a></li>
-<li><a href="addon">Provision add-ons</a></li>
-<li><a href="cons">Start a console</a></li>
-<li><a href="conf">Define config vars</a></li>
-<li><a href="db">Provisions a postgre Database</a></li>
+<li><a href="#local">Run the App locally</a></li>
+<li><a href="#push">Push local changes</a></li>
+<li><a href="#addon">Provision add-ons</a></li>
+<li><a href="#cons">Start a console</a></li>
+<li><a href="#conf">Define config vars</a></li>
+<li><a href="#db">Provisions a postgre Database</a></li>
 </ul>
 
 <hr>
