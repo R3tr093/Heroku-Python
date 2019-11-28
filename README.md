@@ -114,7 +114,7 @@
 
 <code>heroku local web</code><br><br>
 
-<p><i>Open <a href="http://localhost:5000 " target="_blank">http://localhost:5000 </a> with your web browser. You should see your app running locally.</p>
+<p><i>Open <a href="http://localhost:5000 " target="_blank">http://localhost:5000 </a> with your web browser. You should see your app running locally.</i></p>
 
 
 
