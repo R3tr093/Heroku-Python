@@ -11,6 +11,8 @@
 
 <p>Well, he completing my setup for practice web python (in this case for python), on this repository I'm gonna guide you to deploy an Heroku application who running with Python,Django,Postgre.</p>
 
+<p>If you just want to deploy a python web service with django as client and server, take a look on my other repository : <a href="https://github.com/R3tr093/Python-DockerCompose">Python Docker-compose</a> you need docker-compose to run it</p>
+
 <p>You can use this application in local to practice and deploy it on heroku when you're ready to do it. So let me tell you about the few things you have to understand to follow the repository.</p>
 
 <h4> :notebook: <i>the following things are required : </i> </h4>
