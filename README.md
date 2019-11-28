@@ -1,46 +1,55 @@
-# Python: Getting Started
+# Heroku-Python
 
-A barebones Django app, which can easily be deployed to Heroku.
 
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+<img src="banner.png">
 
-## Running Locally
+<hr>
 
-Make sure you have Python 3.7 [installed locally](http://install.python-guide.org). To push to Heroku, you'll need to install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), as well as [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
+<h3>  :computer: Environment and knowledge required. </h3>
 
-```sh
-$ git clone https://github.com/heroku/python-getting-started.git
-$ cd python-getting-started
+<p>Hello, you may wondering why this repository is existing ?</p>
 
-$ python3 -m venv getting-started
-$ pip install -r requirements.txt
+<p>Well, he completing my setup for practice web python (in this case for python), on this repository I'm gonna guide you to deploy an Heroku application who running with Python,Django,Postgre.</p>
 
-$ createdb python_getting_started
+<p>You can use this application in local to practice and deploy it on heroku when you're ready to do it. So let me tell you about the few things you have to understand to follow the repository.</p>
 
-$ python manage.py migrate
-$ python manage.py collectstatic
+<h4> :notebook: <i>the following things are required : </i> </h4>
 
-$ heroku local
-```
+<p><b>A free heroku account.</b></p>
+<p><b><a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank">Heroku CLI</a></b></p>
+<p><b>Python 3.7 localy</b></p>
+<p><b>Postgres localy</b></p>
+<p><b>Github localy</b></p>
+<p><b>Basic knowledges of python  ( Not really necessary but it should help you ) </b></p>
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+<p>I write my this by reading the <a href="https://devcenter.heroku.com/articles/getting-started-with-python" target="_blank">Heroku official documentation</a>, so if something seem don't work, take a look right there.</p>
 
-## Deploying to Heroku
+<hr>
 
-```sh
-$ heroku create
-$ git push heroku master
+<h3> :open_file_folder: List of content </h3>
 
-$ heroku run python manage.py migrate
-$ heroku open
-```
-or
+<ul>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+<li><a href="">Set up</a></li>
+<li><a href="">Prepare the app</a></li>
+<li><a href="">Deploy the app</a></li>
+<li><a href="">View logs</a></li>
+<li><a href="">Define a Procfile</a></li>
+<li><a href="">Scale the app</a></li>
+<li><a href=""></a>Declare app dependencies</li>
+<li><a href=""></a>Run the App locally</li>
+<li><a href=""></a>Push local changes</li>
+<li><a href=""></a>Provision add-ons</li>
+<li><a href=""></a>Start a console</li>
+<li><a href=""></a>Define config vars</li>
+<li><a href=""></a>Provisions a postgre Database</li>
 
-## Documentation
 
-For more information about using Python on Heroku, see these Dev Center articles:
 
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
+
+
+</ul>
+
+
+
 
