@@ -55,7 +55,7 @@
 <p>Feel free to explore the content of the directory, it may be helpful </p>
 
 <h3 id="deploy">:rocket: Deploy your application on heroku. </h3>
-<code> heroku create </code><br>
+<code> heroku create </code><br><br>
 <code> git push heroku master && heroku open </code><br>
 
 
